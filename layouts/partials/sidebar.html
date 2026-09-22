@@ -1,0 +1,87 @@
+<div class="custom-sidebar">
+
+    {{ $avatar := resources.Get "media/authors/me.png" }}
+
+    {{ if $avatar }}
+    <img 
+        src="{{ $avatar.RelPermalink }}"
+        class="sidebar-avatar"
+        alt="Ibrahim Khalil">
+    {{ end }}
+
+
+    <h1>
+        Ibrahim Khalil
+    </h1>
+
+
+    <p class="sidebar-role">
+        Geospatial Analyst <span>|</span> Environmental Researcher
+    </p>
+
+
+    <div class="sidebar-info">
+
+        <div class="sidebar-item">
+            🎓 <strong>MSc in Physical Geography</strong>
+            <br>
+        <a href="https://www.fau.eu/" target="_blank">
+            Friedrich-Alexander-Universität
+            <br>
+            Erlangen-Nürnberg
+        </a>
+
+        </div>
+
+
+        <div class="sidebar-item">
+            🎓 <strong>BSc in Geography and Environment</strong>
+            <br>
+        <a href="https://juniv.edu/" target="_blank">
+            Jahangirnagar University
+        </a>
+        </div>
+
+
+    <div class="sidebar-item location-item">
+
+        <svg class="location-icon" 
+         xmlns="http://www.w3.org/2000/svg" 
+         viewBox="0 0 24 24"
+         fill="currentColor">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+        </svg>
+
+        <strong>Bavaria, Nuremberg, Germany</strong>
+
+    </div>
+
+    </div>
+
+
+    <div class="sidebar-icons">
+
+    <a href="mailto:hmikhalils@gmail.com" aria-label="Email">
+        {{ partial "functions/get_icon" (dict "name" "envelope" "attributes" "class='w-5 h-5'") }}
+    </a>
+
+    <a href="tel:+4915773856523" aria-label="Phone">
+        {{ partial "functions/get_icon" (dict "name" "phone" "attributes" "class='w-5 h-5'") }}
+    </a>
+
+    <a href="https://www.linkedin.com/in/ibrahimkhalils/" 
+        target="_blank" 
+        aria-label="LinkedIn">
+        {{ partial "functions/get_icon" (dict "name" "brands/linkedin" "attributes" "class='w-5 h-5'") }}
+    </a>
+
+    <a href="https://github.com/ibrahimkhalils" 
+        target="_blank" 
+        aria-label="GitHub">
+        {{ partial "functions/get_icon" (dict "name" "brands/github" "attributes" "class='w-5 h-5'") }}
+    </a>
+
+</div>
+
+
+</div>

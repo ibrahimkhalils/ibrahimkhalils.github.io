@@ -13,7 +13,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "Ibrahim Khalil"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
@@ -83,6 +83,8 @@ hugoblox:
     enable: true
     # Header style variant
     style: navbar # navbar | navbar-simple | minimal
+    show_logo: true
+    show_title: false
     # Stick to top on scroll
     sticky: true
     # Menu alignment
@@ -288,3 +290,13 @@ hugoblox:
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
+
+
+
+
+
+appearance:
+  theme_day: minimal
+
+custom_css:
+  - custom.css

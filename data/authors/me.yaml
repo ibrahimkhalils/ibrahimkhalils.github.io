@@ -1,116 +1,163 @@
 schema: hugoblox/author/v1
 slug: me
 is_owner: true
+
+avatar:
+  filename: "authors/linkedin pic.jpeg"
+
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
-postnominals:
-  - PhD
-  - MIEEE
+  display: Ibrahim Khalil
+  given: Ibrahim
+  family: Khalil
+  alternate: ''
+  pronunciation: ''
+
+
 status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+
+role: Geospatial Analyst | Environmental Researcher
+
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  🎓 MSc in Physical Geography
+  Friedrich-Alexander-Universität Erlangen-Nürnberg
+
+  🎓 BSc in Geography and Environment
+  Jahangirnagar University
+
+  📍 Bavaria, Nuremberg, Germany
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+
+
+
+
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
-    label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
-  - icon: brands/github
-    url: https://github.com/example
+    url: mailto:hmikhalils@gmail.com
+    label: Email
+
+  - icon: phone
+    url: tel:+4915773856523
+    label: Mobile
+
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://linkedin.com/in/ibrahimkhalils
+
+  - icon: brands/github
+    url: https://github.com/hmibrahims
+
+
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - GIS
+  - Remote Sensing
+  - Spatial Analysis
+  - Urban Analytics
+
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: Master of Science in Physical Geography
+    institution: Friedrich-Alexander-Universität Erlangen-Nürnberg
+    start: 2024-05-01
+    end: ''
+    url: https://www.fau.de/
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      Focus areas:
+      - Scripting for remote sensing of the environment
+      - Scripting for GIS analysis
+      - Remote sensing, spectroscopy and spectral data analysis
+
+  - degree: Bachelor of Science in Geography and Environment
+    institution: Jahangirnagar University
+    start: 2013-01-01
+    end: 2017-03-01
+    url: https://juniv.edu/
+    summary: |
+      Final grade: 3.60 out of 4.0
+
+      Key courses:
+      - Applications of Geographic Information Systems (GIS)
+      - Remote Sensing for Resource Appraisal and Mapping
+      - Digital Image Processing
+
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+
+  - role: GIS Specialist
+    org: Celltron EMS Limited
+    location: Dhaka, Bangladesh
+    start: 2023-08-01
+    end: 2024-02-01
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+      Worked on geospatial data acquisition, GNSS surveying,
+      spatial database preparation, and GIS quality control workflows.
+
+      Responsibilities included:
+      - Processing GNSS data for high-precision positioning
+      - Digitization, georeferencing and spatial data validation
+      - Preparing project boundaries and Ground Control Point datasets
+      - Supporting drone mapping operations
+
+
+  - role: Research Assistant
+    org: Institute of Remote Sensing and GIS, Jahangirnagar University
+    location: Dhaka, Bangladesh
+    start: 2021-02-01
+    end: 2023-07-01
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Conducted geospatial research using GIS, Remote Sensing and GPS
+      technologies.
+
+      Worked with:
+      - Landsat 5-9 satellite data
+      - Sentinel-2 imagery
+      - Maxar archives
+      - SRTM elevation data
+      - Demographic and administrative datasets
+
+      Responsibilities included:
+      - Geodatabase management
+      - Spatial data cleaning and processing
+      - Field surveys, FGDs and questionnaire-based data collection
+      - Technical report preparation
+
 
 skills:
-  - name: Technical Skills
+
+  - name: GIS & Remote Sensing
+    items:
+      - label: ArcGIS
+        level: 5
+      - label: QGIS
+        level: 5
+      - label: Google Earth Engine
+        level: 4
+      - label: Satellite Image Analysis
+        level: 4
+
+  - name: Programming & Data Analysis
     items:
       - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
+        level: 3
+      - label: R
+        level: 3
+
+  - name: Research Skills
     items:
-      - label: Academic Writing
+      - label: Literature Review
+        level: 4
+      - label: Spatial Data Processing
         level: 5
-      - label: Conference Presentations
+      - label: Academic Writing
         level: 4
-      - label: Grant Proposals
-        level: 4
+
 
 languages:
   - name: English
-    level: 5
-    label: Native
-  - name: Spanish
     level: 4
-    label: Fluent
+    label: Professional
 
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+  - name: German
+    level: 2
+    label: Basic

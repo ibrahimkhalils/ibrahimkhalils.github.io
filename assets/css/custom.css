@@ -1,0 +1,981 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+:root {
+    --navbar-height: 75px;
+    --sidebar-width: 360px;
+    --sidebar-bg: #f5f6f8;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: "Source Serif 4", serif;
+}
+
+
+
+/* =====================================================
+   FIXED NAVBAR
+===================================================== */
+
+.page-header {
+
+    position: fixed !important;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 2000;
+
+    background: rgba(255,255,255,0.92);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 2px 15px rgba(15,23,42,0.08);
+
+}
+
+
+
+/* =====================================================
+   CUSTOM LEFT SIDEBAR
+===================================================== */
+
+
+.custom-sidebar {
+
+    position: fixed;
+
+    top: var(--navbar-height);
+
+    left: 0;
+
+    width: var(--sidebar-width);
+
+    height: calc(100vh - var(--navbar-height));
+
+    background: var(--sidebar-bg);
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    overflow-y: auto;
+
+    border-right: 1px solid rgba(148,163,184,0.25);
+
+    box-shadow: 18px 0 40px rgba(15,23,42,0.12);
+
+    z-index: 1000;
+
+}
+
+
+
+.sidebar-avatar {
+
+    width: 200px;
+
+    height: 200px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin: auto;
+
+}
+
+
+
+.custom-sidebar h1 {
+
+    font-size: 2.3rem;
+
+    margin-top: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.sidebar-role {
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+}
+
+
+
+.sidebar-info {
+
+    margin-top: 35px;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    text-align: left;
+
+}
+
+
+
+.sidebar-icons {
+
+    margin-top: 35px;
+
+}
+
+
+
+.sidebar-icons a {
+
+    margin: 0 8px;
+
+    font-size: 1.2rem;
+
+}
+
+
+
+/* =====================================================
+   MAIN CONTENT AREA
+===================================================== */
+
+
+.custom-layout {
+
+    display: flex;
+
+}
+
+
+.main-content {
+
+    margin-left: var(--sidebar-width);
+
+    width: calc(100% - var(--sidebar-width));
+
+}
+
+
+
+.page-body {
+
+    padding-left: var(--sidebar-width) !important;
+
+}
+
+
+
+/* =====================================================
+   HUGO BLOX SECTION FIX
+===================================================== */
+
+
+.home-section {
+
+    margin-left: 0 !important;
+
+}
+
+
+.home-section .container {
+
+    max-width: none !important;
+
+}
+
+
+
+/* =====================================================
+   MY RESEARCH SECTION
+===================================================== */
+#section-markdown:not(:has(.homepage-slider)) {
+    min-height:500px;
+}
+
+
+#section-markdown h2 {
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+}
+
+
+#section-markdown p {
+
+    font-size: 1.35rem;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* =====================================================
+   GEOSPATIAL IMAGE HERO (OPTIONAL)
+===================================================== */
+
+
+#section-geospatial-research {
+
+    min-height: 420px;
+
+    background-size: cover !important;
+
+    background-position: center !important;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+#section-geospatial-research h2 {
+
+    font-size: 3rem;
+
+    text-align: center;
+
+}
+
+
+#section-geospatial-research p {
+
+    font-size: 1.5rem;
+
+    text-align: center;
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+
+@media(max-width:768px){
+
+
+    .page-body {
+
+        padding-left: 0 !important;
+
+    }
+
+
+    .custom-sidebar {
+
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        top: 0;
+
+    }
+
+
+    .main-content {
+
+        margin-left: 0;
+
+        width: 100%;
+
+    }
+
+
+    .sidebar-info {
+
+        text-align: center;
+
+    }
+
+
+    .sidebar-avatar {
+
+        width:160px;
+
+        height:160px;
+
+    }
+
+
+}
+
+/* =====================================================
+   FINAL HOMEPAGE FIXES
+   Keep this at the very bottom
+===================================================== */
+
+/* Hide sidebar only on homepage */
+body:has(.blox-hero) .custom-sidebar {
+    display: none !important;
+}
+
+body:has(.blox-hero) .page-body {
+    padding-left: 0 !important;
+}
+
+body:has(.blox-hero) .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+
+.page-body {
+    padding-left: 360px !important;
+}
+
+
+.sidebar-avatar {
+    width: 200px !important;
+    height: 200px !important;
+
+    border-radius: 50% !important;
+
+    object-fit: cover !important;
+}
+
+
+
+
+/* =========================================
+   MODERN SOCIAL ICONS
+========================================= */
+
+.sidebar-icons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+
+.sidebar-icons a {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.75);
+
+    color: #1f2937;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    transition: all 0.25s ease;
+}
+
+
+.sidebar-icons a:hover {
+
+    transform: translateY(-4px);
+
+    background: #7258ea;
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* Font Awesome icons fix */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+
+
+/* =========================================
+   AVATAR MODERN STYLE
+========================================= */
+
+.sidebar-avatar {
+
+    border: 5px solid white;
+
+    box-shadow:
+        0 10px 25px rgba(26, 26, 26, 0.50);
+
+}
+
+
+/* =========================================
+   SOCIAL ICON MODERN STYLE
+========================================= */
+
+.sidebar-icons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 35px;
+
+}
+
+
+.sidebar-icons a {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #7258ea;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.12);
+
+    transition: all 0.25s ease;
+
+}
+
+
+.sidebar-icons a svg {
+
+    width: 22px;
+
+    height: 22px;
+
+}
+
+
+.sidebar-icons a:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.sidebar-icons a {
+
+    width: 44px;
+    height: 44px;
+
+    min-width: 44px;
+    min-height: 44px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    line-height: 1;
+
+}
+
+
+
+.sidebar-icons {
+    gap: 1px;
+}
+
+
+
+
+
+
+/* =========================================
+   MODERN SIDEBAR TYPOGRAPHY
+========================================= */
+
+
+.custom-sidebar h1 {
+
+    font-size: 1.8rem;
+
+    margin-top: 12px;
+
+    margin-bottom: 8px;
+
+    letter-spacing: -0.5px;
+
+}
+
+
+
+.sidebar-role {
+
+    font-size: 1rem;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.sidebar-info {
+
+    margin-top: 20px;
+
+    font-size: 0.92rem;
+
+    line-height: 1.45;
+    
+    text-align: center;
+
+}
+
+
+
+.sidebar-item {
+
+    margin-bottom: 14px;
+
+}
+
+
+
+.sidebar-item strong {
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+}
+
+
+
+.sidebar-item br + * {
+
+    color: #4b5563;
+
+}
+
+
+
+.location-icon {
+    width: 18px;
+    height: 18px;
+    color: #424243;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.sidebar-item.location-item {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 0px;
+
+}
+
+
+/* Homepage biography text alignment */
+.hbb-section .prose {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+/* Read More link style */
+
+.prose a {
+    color: #7258ea;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.prose a:hover {
+    color: #3d15f2;
+    text-decoration: none;
+}
+
+
+
+/* Navbar brand logo size */
+.navbar-brand img {
+    height: 45px;
+    width: auto;
+    max-height: none;
+}
+
+
+/* Compact HugoBlox navbar menu */
+#nav-menu {
+    gap: 0.5rem !important;
+    margin-left: 200px !important;
+}
+
+#nav-menu .nav-link {
+    padding-left: 0.10rem !important;
+    padding-right: 0.20rem !important;
+}
+
+
+
+/* =====================================================
+   FINAL HOMEPAGE SIDEBAR REMOVE
+===================================================== */
+
+body:has(#section-hero) .custom-sidebar {
+    display: none !important;
+}
+
+body:has(#section-hero) .page-body {
+    padding-left: 0 !important;
+}
+
+body:has(#section-hero) .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+
+/* =====================================================
+   HOMEPAGE WITHOUT SIDEBAR
+===================================================== */
+
+body:has(#section-markdown) .custom-sidebar {
+    display: none !important;
+}
+
+body:has(#section-markdown) .page-body {
+    padding-left: 0 !important;
+}
+
+body:has(#section-markdown) .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+
+
+
+/* =====================================================
+   HOMEPAGE IMAGE SLIDER - CLEAN VERSION
+===================================================== */
+
+
+/* =====================================
+   HOMEPAGE SLIDER
+===================================== */
+
+
+/* Remove Hugo Blox markdown spacing */
+
+body:has(.homepage-slider) #section-markdown:first-of-type {
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+}
+
+
+body:has(.homepage-slider) #section-markdown:first-of-type .relative {
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+}
+
+
+body:has(.homepage-slider) #section-markdown:first-of-type .prose {
+    margin:0 !important;
+    padding:0 !important;
+    max-width:none !important;
+}
+
+
+/* Remove whitespace caused by text container */
+
+body:has(.homepage-slider) #section-markdown:first-of-type .mx-auto {
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+}
+
+
+
+/* Slider */
+
+.homepage-slider {
+
+    width:100vw;
+
+    height:450px;
+
+    margin-left:calc(50% - 50vw);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/* Images */
+
+.homepage-slider img {
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+
+    opacity:0;
+
+    animation:heroFade 15s infinite;
+
+}
+
+
+
+.homepage-slider img:nth-child(1){
+    animation-delay:0s;
+}
+
+.homepage-slider img:nth-child(2){
+    animation-delay:5s;
+}
+
+.homepage-slider img:nth-child(3){
+    animation-delay:10s;
+}
+
+
+
+@keyframes heroFade {
+
+    0%,100% {
+        opacity:0;
+    }
+
+    10%,40% {
+        opacity:1;
+    }
+
+    50% {
+        opacity:0;
+    }
+
+}
+
+
+
+/* =========================================
+   FINAL REMOVE HOMEPAGE SLIDER GAP
+========================================= */
+
+
+/* Target the exact markdown section */
+
+#section-markdown:has(.homepage-slider) {
+
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    margin:0 !important;
+
+}
+
+
+
+/* Kill every internal wrapper spacing */
+
+#section-markdown:has(.homepage-slider) > div,
+#section-markdown:has(.homepage-slider) > div > div,
+#section-markdown:has(.homepage-slider) .relative,
+#section-markdown:has(.homepage-slider) .prose {
+
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+
+}
+
+
+
+/* Keep slider fixed */
+
+.homepage-slider {
+
+    height:450px !important;
+
+}
+
+
+/* ==========================================
+   OVERRIDE HUGO BLOX SECTION SPACING
+   FOR SLIDER ONLY
+========================================== */
+
+
+section:has(.homepage-slider).hbb-section {
+
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+
+    min-height:450px !important;
+
+}
+
+
+/* Remove Blox spacing variable effect */
+
+section:has(.homepage-slider) {
+
+    --hb-spacing-section:0px !important;
+
+}
+
+
+/* Remove all wrappers */
+
+section:has(.homepage-slider) .relative,
+section:has(.homepage-slider) .prose,
+section:has(.homepage-slider) .max-w-prose,
+section:has(.homepage-slider) > div {
+
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+
+}
+
+
+
+/* Slider controls height */
+
+.homepage-slider {
+
+    height:450px !important;
+    margin:0 !important;
+
+}
+
+
+
+/* Remove top gap before homepage slider */
+
+
+
+
+
+
+
+
+
+
+
+/* Kill markdown block wrapper around homepage slider */
+
+section:has(.homepage-slider) > div.flex {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    margin: 0 !important;
+}
+
+
+section:has(.homepage-slider) .prose {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+section:has(.homepage-slider) {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* Remove navbar reserved space before first homepage section */
+
+body:has(.homepage-slider) .page-body {
+    padding-top: 0 !important;
+}
+
+
+.homepage-slider {
+
+    width:100vw;
+    height:450px;
+    margin-left:calc(50% - 50vw);
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+.homepage-slider img {
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:450px;
+
+    object-fit:cover;
+
+    opacity:0;
+
+    animation:heroFade 15s infinite;
+
+}

@@ -60,6 +60,13 @@ markup:
   highlight:
     lineNos: false
 security:
-  _merge: deep
+  exec:
+    allow:
+      - "^dart-sass$"
+      - "^go$"
+      - "^git$"
+      - "^node$"
+      - "^postcss$"
+      - "^tailwindcss$"
 sitemap:
   _merge: deep

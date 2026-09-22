@@ -1,27 +1,81 @@
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-  #     desired widget in your `content/home/` folder.
-  #   The weight parameter defines the order that the links will appear in.
+#   desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Bio
-    url: /
+
+  - name: ABOUT
+    url: '#about'
     weight: 10
-  - name: Papers
-    url: /#papers
-    weight: 11
-  - name: Talks
-    url: /#talks
-    weight: 12
-  - name: News
-    url: /#news
-    weight: 13
-  - name: Experience
-    url: experience/
+
+
+  # Research & Projects dropdown
+
+  - name: RESEARCH & PROJECTS
+    url: '/research-projects/'
     weight: 20
-  - name: Projects
-    url: projects/
+
+  - name: Research Projects
+    url: '/research-projects/research/'
+    parent: RESEARCH & PROJECTS
+    weight: 21
+
+  - name: Technical Projects
+    url: '/research-projects/technical/'
+    parent: RESEARCH & PROJECTS
+    weight: 22
+
+  - name: Ongoing Projects
+    url: '/research-projects/ongoing/'
+    parent: RESEARCH & PROJECTS
+    weight: 23
+
+
+
+  # Stream dropdown
+
+  - name: STREAM
+    url: '#stream'
     weight: 30
-  - name: Courses
-    url: courses/
+
+  - name: Blog Articles
+    url: '#blog'
+    parent: STREAM
+    weight: 31
+
+  - name: Talks
+    url: '#talks'
+    parent: STREAM
+    weight: 32
+
+  - name: Social Media
+    url: '#social-media'
+    parent: STREAM
+    weight: 33
+
+
+
+  # Connect
+
+  - name: CONNECT
+    url: '#connect'
     weight: 40
+
+
+
+  # More dropdown
+
+  - name: MORE
+    url: '#more'
+    weight: 50
+
+  - name: Contact
+    url: '#contact'
+    parent: MORE
+    weight: 51
+
+  - name: References
+    url: '#references'
+    parent: MORE
+    weight: 52

@@ -71,3 +71,5 @@ npm-debug.log*
 ~$*.docx
 ~$*.xlsx
 ~$*.pptx
+# Personal notes and local files
+MyFiles/

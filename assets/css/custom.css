@@ -798,16 +798,31 @@ body:has(.homepage-slider) #section-markdown:first-of-type .mx-auto {
 
 @keyframes heroFade {
 
-    0%,100% {
-        opacity:0;
+    0% {
+        opacity: 0;
+        transform: scale(1.08);
     }
 
-    10%,40% {
-        opacity:1;
+
+    10% {
+        opacity: 1;
     }
+
+
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
 
     50% {
-        opacity:0;
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 0;
+        transform: scale(1.08);
     }
 
 }

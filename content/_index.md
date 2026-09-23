@@ -16,11 +16,27 @@ sections:
       title: ""
 
       text: |-
+
+        {{< raw >}}
         <div class="homepage-slider">
+
           <img src="/images/hero/hero-image.jpg">
           <img src="/images/hero/fau.jpg">
           <img src="/images/hero/fau2.jpg">
+
+
+          <div class="hero-text">
+
+              <h1>
+                  <span id="typing-text"></span>
+              </h1>
+
+          </div>
+
+          <script src="/js/hero-typing.js"></script>
         </div>
+        {{< /raw >}}
+
 
   - block: markdown
 

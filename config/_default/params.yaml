@@ -300,3 +300,8 @@ appearance:
 
 custom_css:
   - custom.css
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -65,6 +65,7 @@
               tabindex="0"
               aria-haspopup="true"
               aria-expanded="false"
+              data-dropdown-trigger
               class="nav-link cursor-pointer select-none {{ range .Children }}
                 {{ $childURL := .URL | absLangURL }}
                 {{ $active := eq $childURL $pageURL }}
